@@ -11,6 +11,7 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
+    <!-- HEADER -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -39,7 +40,193 @@
                     </li>
                 </ul>
             </div>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+    <div id="main" class="menu-container opacity-50 mb-5">
+        <div class="imagem-principal"></div>
+    </div>
+
+    <!-- WHATSAPP -->
+    <div class='position-fixed icon-container' onclick="redirectToChat()">
+        <img src="assets/img/whatsapp.png" alt="WhatsApp" class="wpp-icon"/>
+    </div>
+
+    <!-- SOBRE -->
+    <div id="sobre" class="p-5">
+        <div class="row justify-content-center">
+            <section class="col-12 col-md-5 order-md-2 px-3 mb-5 mb-md-0 d-flex flex-wrap align-items-center">
+                <img src="assets/img/sebs4.jpg" alt="Sebastião Venâncio" class="imagem"/>
+            </section>
+            <section class="col-11 col-md-7 order-md-1 text-justify px-0 px-md-5">
+                <h1 class="text-center mb-3">Sobre Mim</h1>
+                <p class="texto col-12">
+                    Olá, me chamo Sebastião e sou psicólogo clínico de orientação psicanalítica, realizei minha graduação na Universidade de Brasília (UnB) onde atualmente também faço mestrado em Psicologia Clínica e Cultura sobre a clínica psicanalítica de adolescentes. Ao longo da minha trajetória, percebi a importância do ambiente e do contexto que estamos inseridos, e por conta disso, em minha prática busco oferecer um espaço seguro e acolhedor para você refletir sobre si mesmo e sobre sua vida. Além de psicólogo, gosto muito de estudar, ouvir música e tomar café :)  
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <!-- ABORDAGEM -->
+    <div id="abordagem" class="p-2 my-5">
+        <div class="row justify-content-center">
+            <img 
+                src="assets/img/freud.jpg"
+                alt="Sebastião Venâncio" 
+                class="imagem col-12 col-md-6 mb-3 mb-md-0 px-5 ps-md-0 pe-md-5"
+            />
+            <section class="col-11 col-md-5 text-justify">
+                <h1 class="text-center">Abordagem</h1>
+                <p class="texto p-3">
+                    A psicanálise possui o foco em entender o sujeito em seus conflitos internos, a partir do entendimento do inconsciente e sua relação com o consciente, mas também em seus aspectos relacionais interpessoais. Apesar de ter surgido no século XX com Freud, a teoria e técnica psicanalítica se atualizam até os dias atuais para poderem dar conta do sofrimento e demandas que chegam até a clínica. Alguns dos autores que fundamentam a minha prática (além de Freud) são Winnicott, Bion e André Green. Acredito em uma psicoterapia enquanto um ambiente que possibilite o amadurecimento e transformação do sujeito. Um local de acolhimento de suas dores e compartilhamento de experiências, além da busca pela compreensão dos processos pelos quais somos atravessados.
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <!-- SERVIÇOS -->
+    <div id="servicos" class="p-2 mt-3 mb-5">
+        <h1 class="col-12 mb-4 text-center frutiger-font">Serviços</h1>
+        <div class="row justify-content-center mb-5">
+            <div class="card col-7 col-md-3 mb-4 mb-md-0 d-flex align-items-center text-center">
+                <img class="card-img-top" src="./assets/img/adult.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Adultos</h5>
+                    <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                </div>
             </div>
-        </nav>
+            <div class="card col-7 col-md-3 offset-md-1 d-flex align-items-center text-center">
+                <img class="card-img-top" src="./assets/img/teen.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Adolescentes</h5>
+                    <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PERGUNTAS -->
+    <div id="perguntas" class="p-2 mt-3 mb-4">
+        <h1 class="col-12 text-center mb-4">Perguntas Frequentes</h1>
+        <div class="row justify-content-center">
+            <div class="accordion col-10 col-md-8 col-lg-6" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Qual a diferença entre psicoterapia e psicanálise?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-4 frutiger-font text-dark">
+                            A psicanálise, diferente do que muitos pensam, não se trata de uma abordagem da psicologia, ela surgiu de maneira independente e se constitui enquanto prática independente. O que ocorre é que há uma sobreposição entre as áreas, tendo em vista a importância da psicanálise para a psicoterapia. Pode-se pensar nas duas enquanto modalidades de tratamento que se aproximam e conversam, com algumas diferenças na técnica, o que não impede de existir psicoterapias de base psicanalítica.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Quanto tempo dura o atendimento?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-4 frutiger-font text-dark">
+                            As sessões duram em média 50 minutos, mas se você quer saber a duração do tratamento... ele é variável e depende de diversos fatores do terapeuta e do paciente, mas especialmente de particularidades do processo e da disposição do paciente. Em virtude disso, sua terapia pode durar 6 meses, um ano ou mais.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Quando devo começar a terapia?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body py-4 frutiger-font text-dark">
+                            Não existe um momento correto para começar. Eu acredito que o desejo ou a necessidade de entrar em um processo terapêutico ou de análise, diante de alguma dificuldade, sofrimento ou interesse em se conhecer, já constitui motivo suficiente para buscar ajuda.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- CONTATO -->
+    <div id="contato" class="p-2 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-4 my-3 text-justify">
+                <h2>Agende sua sessão</h2>
+                <p class="texto">Preencha os dados ao lado ou mande uma mensagem que entrarei em contato para tirar dúvidas ou marcar uma sessão!</p>
+                <ul class="list-unstyled">
+                    <li>
+                        <BsFillEnvelopeFill/>
+                        <span class="mx-2">contato@sebsvenancio.com.br</span>
+                    </li>
+                    <li>
+                        <BsTelephoneFill/>
+                        <span class="mx-2">(61) 98373-3961</span>
+                    </li>
+                    <li>
+                        <BiMap/>
+                        <span class="mx-2">Brasília - DF</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- FORMULÁRIO -->
+            <form class="col-12 col-md-5 offset-md-1 my-3">
+                <div class="row justify-content-center">
+                    <div class="form-group mb-3 col-11 col-md-6">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome">
+                    </div>
+                    <div class="form-group mb-3 col-11 col-md-6">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Celular (WhatsApp)">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="form-group mb-3 col-11 col-md-12">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="form-group mb-3 col-11 col-md-6">
+                        <label for="exampleInputEmail1">Qual opção é melhor para você?</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Online</option>
+                                <option>Presencial</option>
+
+                            </select>
+                    </div>
+                    <div class="form-group mb-3 col-11 col-md-6">
+                        <label for="exampleInputEmail1">Qual tipo de atendimento?</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Adulto</option>
+                                <option>Adolescente</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="form-group mb-3 col-11 col-md-12">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" maxlength="200" placeholder="Mensagem"></textarea>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="form-group mb-3 col-11 col-md-12">
+                        <button class="btn btn-primary col-12" type="submit">Enviar</button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- FOOTER -->
+            <div class="row bg-primary text-center mt-3 pb-2 pt-3 ">
+                <h6 class="text-light">
+                    Psicólogo Sebastião Venâncio © 2023<br/><br/>
+                    Todos os Direitos Reservados
+                    <!-- Desenvolvido com ♥ por: <a href="https://twitter.com/oucandovozes" class="text-warning text-decoration-none" target="_blank" rel="noreferrer">oucandovozes</a> -->
+                </h6>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
