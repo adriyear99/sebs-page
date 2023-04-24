@@ -76,11 +76,14 @@
 
 @font-face {
     font-family: frutiger;
-    src: url("./assets/fonts/Frutiger\ Neue\ W02\ Book.ttf");
+    src: url("../assets/fonts/Frutiger\ Neue\ W02\ Book.ttf");
 }
 
 .frutiger-font {
     font-family: frutiger;
+}
+
+.clear-bold {
     color: lightcyan;
     font-weight: bold;
 }
