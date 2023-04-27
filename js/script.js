@@ -18,26 +18,13 @@ const sendWpp = (e) => {
     let tipoPaciente = document.getElementById('tipoPaciente').value
     let mensagem = document.getElementById('mensagem').value
 
-    console.log(nome)
-    console.log(telefone)
-    console.log(email)
-    console.log(tipoAtendimento)
-    console.log(tipoPaciente)
-    console.log(mensagem)
+    total = 
+    `Nome: ${nome}%0a` +
+    `Telefone: ${telefone}%0a` +
+    `E-mail: ${email}%0a` +
+    `Tipo de atendimento: ${tipoAtendimento}%0a` +
+    `Tipo de paciente: ${tipoPaciente}%0a` +
+    `Mensagem: ${mensagem}`
 
-
-    // total = 
-    // `Nome: ${name}\n` +
-    // `Telefone: ${phone}\n` +
-    // `E-mail: ${email}\n` +
-    // `Tipo de atendimento: ${tipoAtendimento==="1"?"Online":"Presencial"}\n` +
-    // `Tipo de paciente: ${tipoPaciente==="1"?"Adulto":"Adolescente"}\n` +
-    // `Mensagem: ${mensagem}`
-
-    // console.log(total)
-
-    // if(total !== ""){
-    //     UseWhatsapp('5561983733961',total)
-    //     setTotal("")
-    // }
+    window.open(`https:web.whatsapp.com/send?phone=5561983733961&text=${total}`,"_blank")
 }
