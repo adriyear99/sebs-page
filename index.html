@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Psi Sebastião Venâncio</title>
+    <title>Sebastião Venâncio</title>
     <link rel="stylesheet" href="cs/styles.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous" defer></script>
     <script src="js/script.js" defer></script>
 </head>
@@ -15,7 +17,7 @@
         <!-- HEADER -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand frutiger-font" href="#">
                     Sebastião Venâncio<br>
                     Psicologia e Psicanálise
                 </a>
@@ -23,21 +25,21 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto texto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Sobre Mim</a>
+                            <a class="nav-link frutiger-font" aria-current="page" href="#sobre">Sobre Mim</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Abordagem</a>
+                            <a class="nav-link frutiger-font" href="#abordagem">Abordagem</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Serviços</a>
+                            <a class="nav-link frutiger-font" href="#servicos">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Perguntas</a>
+                            <a class="nav-link frutiger-font" href="#perguntas">Perguntas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link frutiger-font" href="#contato">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -113,13 +115,13 @@
 
         <!-- MODAL -->
         <div class="modal fade" id="modalAdultos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Adultos</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body frutiger-font">
                         Atendimento destinado a pessoas com mais de 18 anos e tem o foco na compreensão do sujeito e como ele se relaciona com o ambiente e na escuta de suas dores. Algumas demandas de adultos que chegam até mim e que possuo experiência para trabalhar são: transtornos psicológicos (como borderline e bipolaridade), depressão, vícios, luto, problemas com o trabalho, ideação suicida, dentre outros. Gosto de trabalhar em parceria com outros profissionais, como psiquiatras, quando for necessário e pertinente ao caso.
                     </div>
                     <div class="modal-footer">
@@ -130,13 +132,13 @@
         </div>
 
         <div class="modal fade" id="modalAdolescentes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Adolescentes</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body frutiger-font">
                         Atendimento destinado a pessoas com idade entre 12 e 18 anos e tem o foco no processo de crescimento e amadurecimento, suas questões e particularidades dessa fase do desenvolvimento. Dentre algumas queixas comuns entre os adolescentes atualmente incluem ansiedade, depressão, dificuldade na escola e/ou no relacionamento com os pais, sexualidade, dúvida em relação ao futuro, além de transtornos e comportamentos como automutilação, uso de substâncias, dentre outros. Realizo também orientação profissional, caso seja de interesse do adolescente. É necessário o consentimento dos pais para realizar o processo terapêutico, e eles podem ser chamados para consultas pontuais.
                     </div>
                     <div class="modal-footer">
@@ -153,36 +155,36 @@
                 <div class="accordion col-10 col-md-8 col-lg-6" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="accordion-button frutiger-font" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Qual a diferença entre psicoterapia e psicanálise?
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body py-4 frutiger-font text-dark">
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body py-4 frutiger-font text-dark fw-bold">
                                 A psicanálise, diferente do que muitos pensam, não se trata de uma abordagem da psicologia, ela surgiu de maneira independente e se constitui enquanto prática independente. O que ocorre é que há uma sobreposição entre as áreas, tendo em vista a importância da psicanálise para a psicoterapia. Pode-se pensar nas duas enquanto modalidades de tratamento que se aproximam e conversam, com algumas diferenças na técnica, o que não impede de existir psicoterapias de base psicanalítica.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed frutiger-font" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 Quanto tempo dura o atendimento?
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body py-4 frutiger-font text-dark">
+                            <div class="accordion-body py-4 frutiger-font text-dark fw-bold">
                                 As sessões duram em média 50 minutos, mas se você quer saber a duração do tratamento... ele é variável e depende de diversos fatores do terapeuta e do paciente, mas especialmente de particularidades do processo e da disposição do paciente. Em virtude disso, sua terapia pode durar 6 meses, um ano ou mais.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed frutiger-font" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Quando devo começar a terapia?
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body py-4 frutiger-font text-dark">
+                            <div class="accordion-body py-4 frutiger-font text-dark fw-bold">
                                 Não existe um momento correto para começar. Eu acredito que o desejo ou a necessidade de entrar em um processo terapêutico ou de análise, diante de alguma dificuldade, sofrimento ou interesse em se conhecer, já constitui motivo suficiente para buscar ajuda.
                             </div>
                         </div>
@@ -195,20 +197,20 @@
         <div id="contato" class="mt-5">
             <div class="row justify-content-center">
                 <div class="col-10 col-md-4 my-3 text-justify">
-                    <h2>Agende sua sessão</h2>
-                    <p class="texto">Preencha os dados ao lado ou mande uma mensagem que entrarei em contato para tirar dúvidas ou marcar uma sessão!</p>
+                    <h2 class="frutiger-font">Agende sua sessão</h2>
+                    <p class="texto frutiger-font">Preencha os dados ao lado ou mande uma mensagem que entrarei em contato para tirar dúvidas ou marcar uma sessão!</p>
                     <ul class="list-unstyled">
                         <li>
-                            <BsFillEnvelopeFill/>
-                            <span class="mx-2">contato@sebsvenancio.com.br</span>
+                            <i class="bi bi-envelope-fill"></i>
+                            <span class="mx-2 frutiger-font">contato@sebsvenancio.com.br</span>
                         </li>
                         <li>
-                            <BsTelephoneFill/>
-                            <span class="mx-2">(61) 98373-3961</span>
+                            <i class="bi bi-telephone-fill"></i>
+                            <span class="mx-2 frutiger-font">(61) 98373-3961</span>
                         </li>
                         <li>
-                            <BiMap/>
-                            <span class="mx-2">Brasília - DF</span>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span class="mx-2 frutiger-font">Brasília - DF</span>
                         </li>
                     </ul>
                 </div>
@@ -217,29 +219,28 @@
                 <form class="col-12 col-md-5 offset-md-1 my-3">
                     <div class="row justify-content-center">
                         <div class="form-group mb-3 col-11 col-md-6">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome">
+                            <input type="text" maxlength="50" class="form-control frutiger-font" id="nome" aria-describedby="emailHelp" placeholder="Nome">
                         </div>
                         <div class="form-group mb-3 col-11 col-md-6">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Celular (WhatsApp)">
+                            <input type="text" maxlength="15" class="form-control frutiger-font" id="telefone" aria-describedby="emailHelp" placeholder="Celular (WhatsApp)">
                         </div>
                     </div>
                     <div class="row justify-content-center">
                         <div class="form-group mb-3 col-11 col-md-12">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
+                            <input type="email" maxlength="50" class="form-control frutiger-font" id="email" aria-describedby="emailHelp" placeholder="E-mail">
                         </div>
                     </div>
                     <div class="row justify-content-center">
                         <div class="form-group mb-3 col-11 col-md-6">
-                            <label for="exampleInputEmail1" class="text-warning frutiger-font">Qual opção é melhor para você?</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
+                            <label for="exampleInputEmail1" class="text-warning fw-bold frutiger-font mb-1">Qual opção é melhor para você?</label>
+                                <select class="form-select frutiger-font" id="tipoAtendimento">
                                     <option>Online</option>
                                     <option>Presencial</option>
-
                                 </select>
                         </div>
                         <div class="form-group mb-3 col-11 col-md-6">
-                            <label for="exampleInputEmail1" class="text-warning frutiger-font">Qual tipo de atendimento?</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
+                            <label for="exampleInputEmail1" class="text-warning fw-bold frutiger-font mb-1">Qual tipo de atendimento?</label>
+                                <select class="form-select frutiger-font" id="tipoPaciente">
                                     <option>Adulto</option>
                                     <option>Adolescente</option>
                                 </select>
@@ -247,19 +248,21 @@
                     </div>
                     <div class="row justify-content-center">
                         <div class="form-group mb-3 col-11 col-md-12">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" maxlength="200" placeholder="Mensagem"></textarea>
+                            <textarea class="form-control frutiger-font" id="mensagem" rows="4" maxlength="200" placeholder="Mensagem"></textarea>
                         </div>
                     </div>
                     <div class="row justify-content-center">
                         <div class="form-group mb-3 col-11 col-md-12">
-                            <button class="btn btn-primary col-12" type="submit">Enviar</button>
+                            <button class="btn btn-warning col-12 frutiger-font p-2" type="submit" onclick="sendWpp(event)">
+                                Enviar
+                            </button>
                         </div>
                     </div>
                 </form>
 
                 <!-- FOOTER -->
                 <footer class="row bg-primary text-center mt-3 pb-2 pt-3 ">
-                    <h6 class="text-light">
+                    <h6 class="text-light frutiger-font">
                         Psicólogo Sebastião Venâncio © 2023<br/><br/>
                         Todos os Direitos Reservados
                         <!-- Desenvolvido com ♥ por: <a href="https://twitter.com/oucandovozes" class="text-warning text-decoration-none" target="_blank" rel="noreferrer">oucandovozes</a> -->
