@@ -5,15 +5,23 @@
     font-family: "Literata", serif;
 }
 
+body {
+    background-color: #F5F5F5 !important;
+}
+
 @media (min-width: 720px) {
     body {
         overflow-x: hidden;
     }
 }
 
+.navbar {
+    background-color: #F5F5F5 !important;
+}
+
 .texto {
-    color: darkgray;
-    font-size: 18px;
+    color: #000;
+    font-size: 16px;
 }
 
 .text-justify {
@@ -24,6 +32,11 @@
 .imagem {
     height: auto;
     max-width: 100%;
+}
+
+.logo-sebs {
+    height: 40px;
+    width: 100px;
 }
 
 @media (min-width: 720px) {
@@ -83,6 +96,22 @@
     font-family: frutiger;
 }
 
+.texto-titulo {
+    font-size: 56px;
+}
+
+.texto-principal {
+    font-size: 24px;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.texto-botao {
+    font-size: 16px;
+}
+
 .clear-bold {
     color: lightcyan;
     font-weight: bold;
@@ -91,6 +120,10 @@
 .imagem-principal{
     padding-top:56%;
     width: 100%;
+}
+
+.imagem-sala {
+    height: 400px;
 }
 
 .menu-container{
