@@ -47,10 +47,6 @@ body {
     border-radius: 50%;
 }
 
-#servicos {
-    background-color: #f5c771;
-}
-
 .servico {
     font-size: 1.75rem !important;
 }
@@ -85,6 +81,12 @@ body {
     }
 }
 
+@media (max-width: 720px) {
+    #navbar {
+        display: none;
+    }
+}
+
 @font-face {
     font-family: frutiger;
     src: url("../assets/fonts/Frutiger\ Neue\ W02\ Book.ttf");
@@ -108,11 +110,6 @@ body {
 
 .texto-botao {
     font-size: 16px;
-}
-
-.clear-bold {
-    color: lightcyan;
-    font-weight: bold;
 }
 
 .imagem-principal{
@@ -153,4 +150,26 @@ body {
 .wpp-icon:hover{
     opacity: 1;
     cursor: pointer;
+}
+
+.card-footer:last-child {
+    border-radius: 0!important;
+}
+
+.card-footer {
+    padding: 0!important;
+    background-color: unset!important;
+    border-top: unset!important;
+}
+
+.text-center {
+    color: #fff;
+}
+
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 0 !important;
 }

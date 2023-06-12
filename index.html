@@ -16,7 +16,7 @@
 <body>
     <div class="container">
         <!-- HEADER -->
-        <nav class="row navbar navbar-expand-lg bg-body-tertiary">
+        <nav id="navbar" class="row navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand frutiger-font col-md-3 d-inline-block" href="#">
                     <div class="d-flex">
@@ -60,8 +60,8 @@
 
         <!-- MAIN -->
         <div class="row mt-5">
-            <div class="col-12 col-md-5 offset-md-1">
-                <h1 class="texto-titulo">Psicoterapia<br>psicanalítica no DF</h1>
+            <div id="menu" class="col-12 col-md-5">
+                <h1 class="texto-titulo">Psicoterapia psicanalítica no DF</h1>
                 <p class="montserrat texto-principal">
                     Atendimento psicológico e psicanalítico online e presencial em Brasília para adultos e adolescentes.
                 </p>
@@ -70,7 +70,7 @@
                     <span class="montserrat texto-botao">Agendar Sessão</span>
                 </button>
             </div>
-            <div class="col-12 col-md-5">
+            <div class="col-12 col-md-5 offset-md-1">
                 <img src="./assets/img/sala.png" alt="Sala" class="imagem-sala object-fit-contain">
             </div>
         </div>
@@ -80,10 +80,10 @@
         <div id="sobre" class="my-5">
             <div class="row justify-content-center d-flex align-items-center" style="height: 500px;">
                 <section class="col-12 col-md-5 mb-5 mb-md-0 d-flex flex-wrap align-items-center">
-                    <img src="assets/img/sebs-foto.png" alt="Sebastião Venâncio" class="imagem"/>
+                    <img src="assets/img/sebs-foto.png" alt="Sebastião Venâncio" class="imagem img-fluid"/>
                 </section>
                 <section class="col-11 col-md-7 text-justify bg-white flex-column h-60 p-5">
-                    <h1 class="text-center mb-3 frutiger-font">Olá, me chamo Sebastião &#128075;</h1>
+                    <h1 class="mb-3 border-bottom border-dark border-3 d-inline-block">Olá, me chamo Sebastião &#128075;</h1>
                     <p class="texto col-12 montserrat">
                         Sou um psicólogo clínico de orientação psicanalítica, realizei minha graduação na Universidade de Brasília (UnB) onde atualmente também faço mestrado em Psicologia Clínica e Cultura sobre a clínica psicanalítica de adolescentes. 
                     </p>
@@ -95,42 +95,35 @@
         </div>
 
         <!-- ABORDAGEM -->
-        <div id="abordagem" class="row my-5">
-            <div class="col-12 d-flex justify-content-center align-items-center">
-                <img 
-                    src="assets/img/cadeira.png"
-                    alt="Sebastião Venâncio" 
-                    class="imagem col-12 col-md-5 order-md-2"
-                />
-                <section class="col-11 col-md-7 order-md-1 h-60">
-                    <h1 class="titulo">Abordagem</h1>
-                    <p class="texto montserrat">
-                        A psicanálise possui o foco em entender o sujeito em seus conflitos internos, a partir do entendimento do inconsciente e sua relação com o consciente, mas também em seus aspectos relacionais interpessoais. Apesar de ter surgido no século XX com Freud, a teoria e técnica psicanalítica se atualizam até os dias atuais para poderem dar conta do sofrimento e demandas que chegam até a clínica. Alguns dos autores que fundamentam a minha prática (além de Freud) são Winnicott, Bion e André Green. Acredito em uma psicoterapia enquanto um ambiente que possibilite o amadurecimento e transformação do sujeito. Um local de acolhimento de suas dores e compartilhamento de experiências, além da busca pela compreensão dos processos pelos quais somos atravessados.
-                    </p>
-                </section>
-            </div>
+        <div id="abordagem" class="row d-flex align-items-center my-5">
+            <img 
+                src="assets/img/cadeira.png"
+                alt="Sebastião Venâncio" 
+                class="imagem col-12 col-md-5 order-md-2 offset-md-1"
+            />
+            <section class="col-11 col-md-6 text-justify order-md-1">
+                <h1 class="titulo border-bottom border-dark border-3 d-inline-block">Abordagem</h1>
+                <p class="texto montserrat">
+                    A psicanálise possui o foco em entender o sujeito em seus conflitos internos, a partir do entendimento do inconsciente e sua relação com o consciente, mas também em seus aspectos relacionais interpessoais. Apesar de ter surgido no século XX com Freud, a teoria e técnica psicanalítica se atualizam até os dias atuais para poderem dar conta do sofrimento e demandas que chegam até a clínica. Alguns dos autores que fundamentam a minha prática (além de Freud) são Winnicott, Bion e André Green. Acredito em uma psicoterapia enquanto um ambiente que possibilite o amadurecimento e transformação do sujeito. Um local de acolhimento de suas dores e compartilhamento de experiências, além da busca pela compreensão dos processos pelos quais somos atravessados.
+                </p>
+            </section>
         </div>
 
         <!-- SERVIÇOS -->
-        <div id="servicos" class="mt-3 mb-5">
-            <h1 class="col-12 mb-4 text-center frutiger-font clear-bold">Serviços</h1>
-            <div class="row justify-content-center mb-5">
-                <div class="card col-7 col-md-3 mb-4 mb-md-0 d-flex align-items-center text-center">
-                    <img class="card-img-top" src="./assets/img/adult.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title frutiger-font">Adultos</h5>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAdultos">
-                            Ver Detalhes
-                        </button>
+        <div id="servicos" class="row my-5">
+            <h1 class="col-12 mb-4 border-bottom border-dark border-3 d-inline-block">Serviços</h1>
+            <div class="row justify-content-center">
+                <div class="card col-7 col-md-5 mx-md-1 mb-4 mb-md-0" data-bs-toggle="modal" data-bs-target="#modalAdultos" style="padding: 0;">
+                    <img class="card-img-top card-img-overlay" src="./assets/img/adult.jpg" alt="Adolescente">
+                    <h5 class="montserrat text-light ms-4">Terapia para adultos</h5>
+                    <div class="card-img-overlay">
+                        <h5 class="montserrat text-light ms-4">Terapia para adultos</h5>
                     </div>
                 </div>
-                <div class="card col-7 col-md-3 offset-md-1 d-flex align-items-center text-center">
-                    <img class="card-img-top" src="./assets/img/teen.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title frutiger-font">Adolescentes</h5>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAdolescentes">
-                            Ver Detalhes
-                        </button>
+                <div class="card col-7 col-md-5 mx-md-1" data-bs-toggle="modal" data-bs-target="#modalAdolescentes" style="padding: 0;">
+                    <img class="card-img-top" src="./assets/img/teen.jpg" alt="Adulto">
+                    <div class="card-img-overlay">
+                        <h5 class="montserrat text-light ms-4">Terapia para adolescentes</h5>
                     </div>
                 </div>
             </div>
@@ -144,7 +137,7 @@
                         <h5 class="modal-title" id="exampleModalLabel">Adultos</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body frutiger-font">
+                    <div class="modal-body montserrat">
                         Atendimento destinado a pessoas com mais de 18 anos e tem o foco na compreensão do sujeito e como ele se relaciona com o ambiente e na escuta de suas dores. Algumas demandas de adultos que chegam até mim e que possuo experiência para trabalhar são: transtornos psicológicos (como borderline e bipolaridade), depressão, vícios, luto, problemas com o trabalho, ideação suicida, dentre outros. Gosto de trabalhar em parceria com outros profissionais, como psiquiatras, quando for necessário e pertinente ao caso.
                     </div>
                     <div class="modal-footer">
@@ -161,7 +154,7 @@
                         <h5 class="modal-title" id="exampleModalLabel">Adolescentes</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body frutiger-font">
+                    <div class="modal-body montserrat">
                         Atendimento destinado a pessoas com idade entre 12 e 18 anos e tem o foco no processo de crescimento e amadurecimento, suas questões e particularidades dessa fase do desenvolvimento. Dentre algumas queixas comuns entre os adolescentes atualmente incluem ansiedade, depressão, dificuldade na escola e/ou no relacionamento com os pais, sexualidade, dúvida em relação ao futuro, além de transtornos e comportamentos como automutilação, uso de substâncias, dentre outros. Realizo também orientação profissional, caso seja de interesse do adolescente. É necessário o consentimento dos pais para realizar o processo terapêutico, e eles podem ser chamados para consultas pontuais.
                     </div>
                     <div class="modal-footer">
@@ -173,41 +166,41 @@
 
         <!-- PERGUNTAS -->
         <div id="perguntas" class="mt-3 mb-4">
-            <h1 class="col-12 text-center mb-4">Perguntas Frequentes</h1>
+            <h1 class="col-12 mb-4 border-bottom border-dark border-3 d-inline-block">Perguntas Frequentes</h1>
             <div class="row justify-content-center">
-                <div class="accordion col-10 col-md-8 col-lg-6" id="accordionExample">
+                <div class="accordion col-10 col-md-12" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button frutiger-font" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="accordion-button montserrat" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Qual a diferença entre psicoterapia e psicanálise?
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body frutiger-font text-dark fw-bold">
+                            <div class="accordion-body montserrat text-dark fw-bold">
                                 A psicanálise, diferente do que muitos pensam, não se trata de uma abordagem da psicologia, ela surgiu de maneira independente e se constitui enquanto prática independente. O que ocorre é que há uma sobreposição entre as áreas, tendo em vista a importância da psicanálise para a psicoterapia. Pode-se pensar nas duas enquanto modalidades de tratamento que se aproximam e conversam, com algumas diferenças na técnica, o que não impede de existir psicoterapias de base psicanalítica.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed frutiger-font" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed montserrat" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 Quanto tempo dura o atendimento?
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body py-4 frutiger-font text-dark fw-bold">
+                            <div class="accordion-body py-4 montserrat text-dark fw-bold">
                                 As sessões duram em média 50 minutos, mas se você quer saber a duração do tratamento... ele é variável e depende de diversos fatores do terapeuta e do paciente, mas especialmente de particularidades do processo e da disposição do paciente. Em virtude disso, sua terapia pode durar 6 meses, um ano ou mais.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed frutiger-font" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed montserrat" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Quando devo começar a terapia?
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body py-4 frutiger-font text-dark fw-bold">
+                            <div class="accordion-body py-4 montserrat text-dark fw-bold">
                                 Não existe um momento correto para começar. Eu acredito que o desejo ou a necessidade de entrar em um processo terapêutico ou de análise, diante de alguma dificuldade, sofrimento ou interesse em se conhecer, já constitui motivo suficiente para buscar ajuda.
                             </div>
                         </div>
@@ -284,7 +277,7 @@
                 </form>
 
                 <!-- FOOTER -->
-                <footer class="row bg-primary text-center mt-3 pb-2 pt-3 ">
+                <footer class="row text-center mt-3 pb-2 pt-3" style="background: #2F5E39;">
                     <h6 class="text-light frutiger-font">
                         Psicólogo Sebastião Venâncio © 2023<br/><br/>
                         Todos os Direitos Reservados
