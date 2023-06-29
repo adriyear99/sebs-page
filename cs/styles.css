@@ -29,8 +29,20 @@ body {
     font-size: 32px;
 }
 
+@media (max-width: 720px) {
+    .texto-agendar {
+        font-size: 24px;
+    }
+}
+
 .titulo {
     font-size: 40px;
+}
+
+@media (max-width: 720px) {
+    .titulo {
+        font-size: 24px;
+    }
 }
 
 .text-justify {
@@ -103,7 +115,7 @@ body {
 }
 
 .imagem-freud {
-    background-image: url("../assets/img/freud.jpg");
+    background-image: url("../assets/img/freud-dark.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-color: rgba(255, 255, 255, 0.4);
