@@ -7,9 +7,7 @@ const redirectToChat = () => {
 }
 
 
-const sendWpp = (e) => {
-
-    e.preventDefault();
+const sendWpp = () => {
 
     let nome = document.getElementById('nome').value
     let telefone = document.getElementById('telefone').value

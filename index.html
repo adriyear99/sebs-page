@@ -127,7 +127,7 @@
 
         <!-- SERVIÇOS -->
         <div id="servicos" class="row justify-content-center my-5">
-            <h1 class="col-10 mb-4 text-center text-md-start">Serviços</h1>
+            <h1 class="col-10 mb-4 text-center text-md-start titulo">Serviços</h1>
             <div id="adultos" class="col-10 col-md-5 position-relative mb-3 mb-md-0" data-bs-toggle="modal" data-bs-target="#modalAdultos">
                 <img src="./assets/img/adult.jpg" alt="Adolescente" class="imagem img-fluid">
                 <p class="montserrat bold text-light texto-imagem">Terapia para adultos</p>
@@ -269,31 +269,31 @@
                 <img 
                     src="assets/img/mapa.jpg"
                     alt="Mapa Escritório Sebastião Venâncio" 
-                    class="imagem col-12 col-md-5 mb-3 mb-md-0"
+                    class="imagem col-11 col-md-5 mb-3 mb-md-0"
                 />
 
                 <form class="col-12 col-md-5 my-3 ms-md-3">
-                    <h2 class="frank-ruhl-libre text-center text-md-start">Agende sua sessão</h2>
+                    <h2 class="frank-ruhl-libre text-center text-md-start titulo">Agende sua sessão</h2>
                     <p class="texto montserrat text-justify">Preencha os dados ao lado ou mande uma mensagem que entrarei em contato para tirar dúvidas ou marcar uma sessão!</p>
                     <div class="row justify-content-center">
-                        <div class="form-group mb-3 col-12 col-md-6">
+                        <div class="form-group mb-3 col-11 col-md-6">
                             <label for="nome" class="form-label montserrat bold">Nome</label>
                             <input type="text" maxlength="50" class="form-control frutiger-font" id="nome" placeholder="Nome">
                         </div>
-                        <div class="form-group mb-3 col-12 col-md-6">
+                        <div class="form-group mb-3 col-11 col-md-6">
                             <label for="telefone" class="form-label montserrat bold">WhatsApp</label>
                             <input type="text" maxlength="15" class="form-control frutiger-font" id="telefone" placeholder="Insira seu número (WhatsApp)">
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="form-group mb-3 col-12">
+                        <div class="form-group mb-3 col-11">
                             <label for="mensagem" class="form-label montserrat bold">Mensagem</label>
                             <textarea class="form-control frutiger-font" id="mensagem" rows="4" maxlength="200" placeholder="Insira sua mensagem"></textarea>
                         </div>
                     </div>
                     <div class="row justify-content-center justify-content-md-start mb-3">
                         <div class="form-group col-11 col-md-6">
-                            <button class="btn btn-success col-12 col-md-9" type="submit" onclick="redirectToChat()">
+                            <button class="btn btn-success col-12 col-md-9" onclick="sendWpp()">
                                 <i class="bi bi-whatsapp"></i>
                                 <span class="montserrat texto-botao">Agendar Sessão</span>
                             </button>
