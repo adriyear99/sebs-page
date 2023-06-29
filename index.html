@@ -17,11 +17,11 @@
 <body>
     <div class="container-fluid">
         <!-- HEADER -->
-        <!-- <nav id="navbar" class="row navbar navbar-expand-lg bg-body-tertiary">
+        <nav id="navbar" class="row navbar navbar-expand-md bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand frutiger-font col-md-3 d-inline-block" href="#">
-                    <div class="d-flex">
-                        <img src="./assets/img/logo.png" alt="Logo Sebs" class="logo-sebs">
+                <a id="logo" class="navbar-brand montserrat texto col-md-3 d-inline-block" href="#">
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/img/icon.png" alt="Logo Sebs" class="logo-sebs img-fluid">
                         <h1 class="texto montserrat">
                             SEBASTIÃO <span class="fw-bold">VENÂNCIO</span><br>
                             PSICANALISTA
@@ -34,30 +34,30 @@
                 <div class="collapse navbar-collapse col-md-6" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto texto text-center mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link frutiger-font" aria-current="page" href="#sobre">Sobre Mim</a>
+                            <a class="nav-link montserrat texto" aria-current="page" href="#sobre">Sobre Mim</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link frutiger-font" href="#abordagem">Abordagem</a>
+                            <a class="nav-link montserrat texto" href="#abordagem">Abordagem</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link frutiger-font" href="#servicos">Serviços</a>
+                            <a class="nav-link montserrat texto" href="#servicos">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link frutiger-font" href="#perguntas">Perguntas</a>
+                            <a class="nav-link montserrat texto" href="#perguntas">Perguntas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link frutiger-font" href="#contato">Contato</a>
+                            <a class="nav-link montserrat texto" href="#contato">Contato</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div id="botao-nav" class="col-md-3">
                     <button class="btn btn-success my-2 my-sm-0" type="submit" onclick="redirectToChat()">
                         <i class="bi bi-whatsapp"></i>
                         <span class="montserrat texto-botao">Agendar Sessão</span>
                     </button>
                 </div>
             </div>
-        </nav> -->
+        </nav>
 
         <!-- MAIN -->
         <div class="row mt-5 justify-content-center">
@@ -78,8 +78,8 @@
 
 
         <!-- SOBRE -->
-        <!-- <div id="sobre" class="my-5">
-            <div class="row d-flex align-items-center" style="height: 500px;">
+        <div id="sobre" class="my-5">
+            <div class="row d-flex align-items-center">
                 <section class="col-12 col-md-6 flex-column h-60 p-4 box-abordagem offset-md-5 order-md-2">
                     <h1 class="mb-3 text-hello frank-ruhl-libre">Olá, me chamo Sebastião &#128075;</h1>
                     <p class="texto col-12 montserrat text-justify">
@@ -93,7 +93,7 @@
                     <img src="assets/img/sebs-foto.png" alt="Sebastião Venâncio" class="imagem img-fluid"/>
                 </section>
             </div>
-        </div> -->
+        </div>
 
         <!-- ABORDAGEM -->
         <div id="abordagem" class="row d-flex align-items-center justify-content-center my-5 text-justify">
@@ -211,7 +211,7 @@
             </div>
 
             <div class="row justify-content-center mt-3">
-                <button class="btn btn-success mb-3 mb-md-0 col-9 col-md-3" type="submit" onclick="redirectToChat()">
+                <button class="btn btn-success mb-4 mb-md-0 col-9 col-md-3" type="submit" onclick="redirectToChat()">
                     <i class="bi bi-whatsapp"></i>
                     <span class="montserrat texto-botao">Agendar Sessão</span>
                 </button>
@@ -220,9 +220,9 @@
 
         <!-- PERGUNTAS -->
         <div id="perguntas" class="my-4">
-            <h1 class="col-12 mb-4 text-center text-md-start">Perguntas Frequentes</h1>
             <div class="row justify-content-center">
-                <div class="accordion col-12" id="accordionExample">
+                <h2 class="col-10 mb-4 text-center text-md-start">Perguntas Frequentes</h1>
+                <div class="accordion col-12 col-md-10" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button collapsed montserrat bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -264,36 +264,36 @@
         </div>
 
         <!-- CONTATO -->
-        <!-- <div id="contato" class="mt-5">
+        <div id="contato" class="mt-5">
             <div class="row justify-content-center">
                 <img 
-                    src="assets/img/cadeira.png"
-                    alt="Sebastião Venâncio" 
-                    class="imagem col-12 col-md-6"
+                    src="assets/img/mapa.jpg"
+                    alt="Mapa Escritório Sebastião Venâncio" 
+                    class="imagem col-12 col-md-5 mb-3 mb-md-0"
                 />
 
-                <form class="col-12 col-md-6 my-3">
-                    <h2 class="frank-ruhl-libre" style="font-size: 40px;">Agende sua sessão</h2>
-                    <p class="texto montserrat">Preencha os dados ao lado ou mande uma mensagem que entrarei em contato para tirar dúvidas ou marcar uma sessão!</p>
+                <form class="col-12 col-md-5 my-3 ms-md-3">
+                    <h2 class="frank-ruhl-libre text-center text-md-start">Agende sua sessão</h2>
+                    <p class="texto montserrat text-justify">Preencha os dados ao lado ou mande uma mensagem que entrarei em contato para tirar dúvidas ou marcar uma sessão!</p>
                     <div class="row justify-content-center">
-                        <div class="form-group mb-3 col-11 col-md-6">
+                        <div class="form-group mb-3 col-12 col-md-6">
                             <label for="nome" class="form-label montserrat bold">Nome</label>
                             <input type="text" maxlength="50" class="form-control frutiger-font" id="nome" placeholder="Nome">
                         </div>
-                        <div class="form-group mb-3 col-11 col-md-6">
+                        <div class="form-group mb-3 col-12 col-md-6">
                             <label for="telefone" class="form-label montserrat bold">WhatsApp</label>
                             <input type="text" maxlength="15" class="form-control frutiger-font" id="telefone" placeholder="Insira seu número (WhatsApp)">
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="form-group mb-3 col-11 col-md-12">
+                        <div class="form-group mb-3 col-12">
                             <label for="mensagem" class="form-label montserrat bold">Mensagem</label>
                             <textarea class="form-control frutiger-font" id="mensagem" rows="4" maxlength="200" placeholder="Insira sua mensagem"></textarea>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="form-group mb-3 col-11 col-md-12">
-                            <button class="btn btn-success my-2 my-sm-0" type="submit" onclick="redirectToChat()">
+                    <div class="row justify-content-center justify-content-md-start mb-3">
+                        <div class="form-group col-11 col-md-6">
+                            <button class="btn btn-success col-12 col-md-9" type="submit" onclick="redirectToChat()">
                                 <i class="bi bi-whatsapp"></i>
                                 <span class="montserrat texto-botao">Agendar Sessão</span>
                             </button>
@@ -301,10 +301,10 @@
                     </div>
                 </form>
             </div>
-        </div> -->
+        </div>
 
         <!-- FOOTER -->
-        <footer id="footer" class="row justify-content-center text-center mt-5 pb-2 pt-3 mx-auto">
+        <footer id="footer" class="text-center mt-5 pb-2 pt-3">
             <h6 class="text-light montserrat">
                 Psicólogo Sebastião Venâncio © 2023<br/><br/>
                 Todos os Direitos Reservados
