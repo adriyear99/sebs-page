@@ -18,5 +18,5 @@ const sendWpp = () => {
     `Telefone: ${telefone}%0a` +
     `Mensagem: ${mensagem}`
 
-    window.open(`https:web.whatsapp.com/send?phone=5561983733961&text=${total}`,"_blank")
+    window.open(`https://web.whatsapp.com/send?phone=5561983733961&text=${total}`,"_blank")
 }
