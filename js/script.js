@@ -3,7 +3,7 @@ let total = ""
 
 
 const redirectToChat = () => {
-    window.open("https://api.whatsapp.com/send/?phone=5561983733961&text&type=phone_number&app_absent=0")
+    window.open("https://api.whatsapp.com/send/?phone=5561983733961")
 }
 
 
@@ -18,5 +18,11 @@ const sendWpp = () => {
     `Telefone: ${telefone}%0a` +
     `Mensagem: ${mensagem}`
 
-    window.open(`https://web.whatsapp.com/send?phone=5561983733961&text=${total}`,"_blank")
+    window.open(`https://api.whatsapp.com/send/?phone=5561983733961&text=${total}`,'_system')
+}
+
+// impedir mudança na url
+scroll = (id) => {
+    const access = document.getElementById(id)
+    access.scrollIntoView({behavior: 'smooth'}, true)
 }
